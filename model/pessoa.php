@@ -2,6 +2,8 @@
 
 // echo "em pessoa;";
 
+// namespace model;
+
 class pessoa{
 
 
