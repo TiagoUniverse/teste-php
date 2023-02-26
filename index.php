@@ -10,4 +10,11 @@
 
 echo "Hello world";
 
+
+$pessoa = new pessoa();
+
+$pessoa->setNome("Tiagão");
+
+echo "<br>" . $pessoa->getNome();
+
 ?>
