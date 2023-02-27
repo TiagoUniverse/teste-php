@@ -2,7 +2,7 @@
 
 // echo "em pessoa;";
 
-// namespace model;
+namespace model;
 
 class pessoa{
 

@@ -7,6 +7,7 @@
  */
 
  require_once "model/pessoa.php";
+use model\pessoa;
 
 echo "Hello world";
 
