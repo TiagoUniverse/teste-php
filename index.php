@@ -20,6 +20,15 @@ echo "<br>" . $pessoa->getNome();
 
 
 // Soma
+if (!isset($_POST['numero1'])){
+    $_POST['numero1'] = 0;
+}
+
+
+if (!isset($_POST['numero2'])){
+    $_POST['numero2'] = 0;
+}
+
 if (isset($_POST['numero1']) && isset($_POST['numero2']) ){
 //    echo $_POST['numero1']; 
 //    echo "<br>" . $_POST['numero2'];
@@ -43,8 +52,8 @@ if (isset($_POST['numero1']) && isset($_POST['numero2']) ){
 
 <br><br>
 <form action="index.php" method="post">
-    <input type="number" name="numero1" >
-    <input type="number" name="numero2" >
+    <input type="number" name="numero1" value="<?php echo $_POST['numero1'] ; ?>" >
+    <input type="number" name="numero2" value="<?php echo $_POST['numero2'] ; ?>" >
     <button type="submit">Somar</button>
 </form>
 
